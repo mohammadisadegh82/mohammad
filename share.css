@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.btn-share {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    transform: translate(-50% , -50%);
+}
+.btn-share .btn-icons .share-continer {
+    background-color: dodgerblue;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+}
+.btn-icons .share-continer > :last-child {
+    display: none;
+}
+.btn-icons.active .share-continer > :first-child {
+    display: none;
+}
+.btn-icons.active .share-continer > :last-child {
+    display: inline;
+}
+.btn-icons .social-media {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    background-color: dodgerblue;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: snow;
+    transition: all 300ms ease-in-out;
+}
+.btn-icons.active .social-media:nth-child(2) {
+    top: 25%;
+    left: -50%;
+    transform: translate(-50% , 100%);
+}
+.btn-icons.active .social-media:nth-child(3) {
+    top: -75%;
+    left: -50%;
+    transform: translate(-50% , -50%);
+}
+.btn-icons.active .social-media:nth-child(4) {
+    top: -50%;
+    left: -50%;
+    transform: translate(-100% , 50%);
+}
